@@ -15,7 +15,12 @@ class UserItem extends Component {
     return (
   		<div className='card text-center'>
         <img src={this.state.avatar_url} alt="" className="round-img" style={{width: '60px'}} />
-  		</div>
+  		  
+        <h3>{this.state.login}</h3>
+
+        
+
+      </div>
     )
   }
 }
