@@ -23,14 +23,13 @@ class Users extends Component {
       },
     ]
   }
-  
 
   render() {
     return (
   		<div>
       {
         this.state.users.map(
-          user => (<div>{user.login}</div>)
+          user => (<div key={user.id}>{user.login}</div>)
         )
       }
       </div>
