@@ -13,15 +13,15 @@ class App extends Component {
 
   async componentDidMount() {
     this.setState({ loading: true });
-
     const res = await axios.get('https://api.github.com/users');
-    
     this.setState({ users: res.data, loading: false });
   }
 
   // Search Github Users
-  searchUsers = (text) => {
-    console.log(text);
+  searchUsers = async (text) => {
+    this.setState({ loading: true });
+    const res = await axios.get(`https://api.github.com/search/users?q=${text}`);
+    this.setState({ users: res.data.items, loading: false });
   }
 
   render() {
