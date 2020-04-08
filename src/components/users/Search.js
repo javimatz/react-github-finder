@@ -20,7 +20,11 @@ class Search extends Component {
     showClear: PropTypes.bool.isRequired
   }
 
+
   render() { 
+    
+    const { showClear, clearUsers } = this.props;
+    
     return (
       <div>
         <form onSubmit={this.onSubmit} className="form">
@@ -38,10 +42,10 @@ class Search extends Component {
           />
         </form>
         { 
-          this.props.showClear && (
+          showClear && (
           <button 
             className="btn btn-light btn-block" 
-            onClick={this.props.clearUsers}>
+            onClick={clearUsers}>
             Clear
           </button>
         )}
