@@ -8,7 +8,8 @@ import './App.css';
 class App extends Component {
   state = {
     users: [],
-    loading: false
+    loading: false,
+    alert: null
   };
 
 /*
@@ -33,7 +34,7 @@ class App extends Component {
 
   // Set Alert
   setAlert = (msg, type) => {
-    
+    this.setState({alert: { msg: msg, type: type} });
   }
 
   render() {
