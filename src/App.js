@@ -12,6 +12,7 @@ import './App.css';
 class App extends Component {
   state = {
     users: [],
+    user: {},
     loading: false,
     alert: null
   };
@@ -31,6 +32,13 @@ class App extends Component {
     this.setState({ users: res.data.items, loading: false });
   }
   
+  // Get single Github user
+  getUser = async (username) => {
+    this.setState({ loading: true });
+    const res = await axios.get(`https://api.github.com/users/${username}`);
+    this.setState({ user: res.data, loading: false });
+  }
+
   // Clear Users
   clearUsers = (text) => {
     this.setState({ users: [], loading: false });
