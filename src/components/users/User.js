@@ -6,7 +6,24 @@ class User extends Component {
 	}
 
 	render() { 
-	return <div>{this.props.user.name}</div>;
+		const { 
+		  name,
+		  avatar_url,
+		  location,
+		  html_url,
+		  bio,
+		  blog,
+		  login,
+		  followers,
+		  following,
+		  public_repos,
+		  public_gists,
+		  hireable
+		} = this.props.user;
+
+		const { loading } = this.props;
+
+		return <div>{this.props.user.name}</div>;
   }
 }
 
