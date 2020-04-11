@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Spinner from '../layout/Spinner';
+import { Link } from 'react-router-dom';
 
 class User extends Component {
 	componentDidMount() {
@@ -33,7 +34,13 @@ class User extends Component {
 
 		if (loading) return <Spinner />;
 
-		return <div>{this.props.user.name}</div>;
+		return (
+			<Fragment>
+				<Link to='/' className='btn btn-light' >
+				Back to Search
+				</Link>
+			</Fragment>
+  		)
   }
 }
 
