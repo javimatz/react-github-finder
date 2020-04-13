@@ -10,6 +10,7 @@ const User = ({ user, getUser, getUserRepos, loading, repos, match }) => {
 		// match.params acces to Route path params
 		getUser(match.params.login);
 		getUserRepos(match.params.login);	
+		// eslint-disable-next-line
 	}, []);
 
 	const { 
