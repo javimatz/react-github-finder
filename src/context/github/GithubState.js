@@ -42,6 +42,8 @@ const GithubState = (props) => {
 		>
 
 		</GithubContext.Provider>
-	)
+	);
 
-}
+};
+
+export default GithubState;
