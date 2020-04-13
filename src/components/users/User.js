@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 class User extends Component {
 	// Called after the component is rendered
 	componentDidMount() {
+		// props.match.params acces to Route path params
 		this.props.getUser(this.props.match.params.login);
-		console.log(this.props.match.params);	
 		this.props.getUserRepos(this.props.match.params.login);	
 	}
 
