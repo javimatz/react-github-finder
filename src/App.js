@@ -66,9 +66,12 @@ class App extends Component {
       <Router>
         <div className="App">
           <Navbar />
+          { /* Container */ }
           <div className='container'>
             <Alert alert={this.state.alert} />
+            { /* Router Switch */ }
             <Switch>
+              { /* Root route */ }
               <Route 
                 exact 
                 path='/' 
@@ -84,7 +87,9 @@ class App extends Component {
                   </Fragment>
                 )}
               />  
+              { /* About page route */ }
               <Route exact path='/about' component={About} />
+              { /* User profile route */ }
               <Route exact path='/user/:login' render={ props => (
                   <User 
                     { ...props } 
@@ -97,8 +102,8 @@ class App extends Component {
                 )}
               />
             </Switch>
-
           </div>
+          { /* End container */ }
         </div>
       </Router>
     )

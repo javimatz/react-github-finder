@@ -11,7 +11,9 @@ const Users = ({ users, loading }) => {
     else {
       return (
         <div style={userStyle}>
-        { users.map( user => ( 
+        { 
+          // Creates an RepoItem component for every repos array element 
+          users.map( user => ( 
             <UserItem key={user.id} user={user} /> 
         ))}
         </div>

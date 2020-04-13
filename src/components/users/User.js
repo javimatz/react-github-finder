@@ -5,8 +5,10 @@ import Repos from '../repos/Repos';
 import { Link } from 'react-router-dom';
 
 class User extends Component {
+	// Called after the component is rendered
 	componentDidMount() {
-		this.props.getUser(this.props.match.params.login);	
+		this.props.getUser(this.props.match.params.login);
+		console.log(this.props.match.params);	
 		this.props.getUserRepos(this.props.match.params.login);	
 	}
 
