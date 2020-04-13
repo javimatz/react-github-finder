@@ -40,7 +40,7 @@ const GithubState = (props) => {
 				loading: state.loading
 			}}
 		>
-
+		{props.children}
 		</GithubContext.Provider>
 	);
 
