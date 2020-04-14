@@ -14,7 +14,6 @@ import './App.css';
 
 const App = () => {
   
-  const [user, setUser] = useState({});
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(false);
   const [alert, setAlert] = useState(null);
@@ -22,12 +21,6 @@ const App = () => {
   // Search Github Users
   
   // Get single Github user
-  const getUser = async (username) => {
-    setLoading(true);
-    const res = await axios.get(`https://api.github.com/users/${username}`);
-    setUser(res.data);
-    setLoading(false);
-  }
 
   // Get user repos
   const getUserRepos = async (username) => {
@@ -74,11 +67,8 @@ const App = () => {
               <Route exact path='/user/:login' render={ props => (
                   <User 
                     { ...props } 
-                    getUser={getUser}
                     getUserRepos={getUserRepos} 
-                    user={user} 
                     repos={repos}
-                    loading={loading}
                   />
                 )}
               />
