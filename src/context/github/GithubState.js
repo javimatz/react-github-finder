@@ -23,15 +23,13 @@ const GithubState = (props) => {
 
 	// Search Users
 	const searchUsers = async (text) => {
-	    setLoading(true);
+	    setLoading();
 	    const res = await axios.get(`https://api.github.com/search/users?q=${text}`);
-	    
+
 	    dispatch({
 	    	type: SEARCH_USERS,
 	    	payload: res.data.items
 	    });
-
-	    setLoading(false);
 	}
 	
 	// Get User
@@ -50,7 +48,8 @@ const GithubState = (props) => {
 				users: state.users,
 				user: state.user,
 				repos: state.repos,
-				loading: state.loading
+				loading: state.loading,
+				searchUsers
 			}}
 		>
 		{props.children}
