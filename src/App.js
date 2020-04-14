@@ -14,7 +14,6 @@ import './App.css';
 
 const App = () => {
   
-  const [users, setUsers] = useState([]);
   const [user, setUser] = useState({});
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -39,11 +38,7 @@ const App = () => {
   }
 
   // Clear Users
-  const clearUsers = (text) => {
-    setUsers([]);
-    setLoading(false);
-  }
-
+  
   // Set Alert
   const showAlert = (msg, type) => {
     setAlert({ msg, type });
@@ -67,8 +62,6 @@ const App = () => {
                 render={ props => (
                   <Fragment>
                     <Search 
-                      clearUsers  = {clearUsers}
-                      showClear   = { users.length > 0 ? true : false }  
                       setAlert    = {showAlert}
                     />
                     <Users />
