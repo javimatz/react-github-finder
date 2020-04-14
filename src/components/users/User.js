@@ -4,11 +4,11 @@ import Repos from '../repos/Repos';
 import { Link } from 'react-router-dom';
 import GithubContext from '../../context/github/githubContext';
 
-const User = ({ getUserRepos, repos, match }) => {
+const User = ({ match }) => {
 	
 	const gihubContext = useContext(GithubContext);
 
-	const { getUser, user, loading } = gihubContext;
+	const { getUser, getUserRepos, user, repos, loading } = gihubContext;
 
 	useLayoutEffect( () => {
 		// match.params acces to Route path params
