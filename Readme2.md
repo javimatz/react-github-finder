@@ -1,23 +1,14 @@
-# Repository Title Goes Here
+# Github Finder
 
-> Subtitle or Short Description Goes Here
+A Github Finder app.
 
-> ideally one sentence
+Technologies:
 
-> include terms/tags that can be searched
-
-**Badges will go here**
-
-- build status
-- issues (waffle.io maybe)
-- devDependencies
-- npm package
-- coverage
-- slack
-- downloads
-- gitter chat
-- license
-- etc.
+- react
+- axios
+- react context
+- npm 
+- git
 
 ***INSERT ANOTHER GRAPHIC HERE***
 
