@@ -10,20 +10,9 @@ Technologies:
 - npm 
 - git
 
-***INSERT ANOTHER GRAPHIC HERE***
-
+***Screenshots***
+Home
 [![INSERT YOUR GRAPHIC HERE](https://res.cloudinary.com/dscipfbfx/image/upload/v1589455139/Github%20Finder/Home.png)]()
-
-[![INSERT YOUR GRAPHIC HERE](https://res.cloudinary.com/dscipfbfx/image/upload/v1589455112/Github%20Finder/Profile.png)]()
-
-- Most people will glance at your `README`, *maybe* star it, and leave
-- Ergo, people should understand instantly what your project is about based on your repo
-
-> Tips
-
-- HAVE WHITE SPACE
-- MAKE IT PRETTY
-- GIFS ARE REALLY COOL
 
 > GIF Tools
 
