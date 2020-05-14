@@ -11,8 +11,15 @@ Technologies:
 - git
 
 ***Screenshots***
+
 Home
 [![INSERT YOUR GRAPHIC HERE](https://res.cloudinary.com/dscipfbfx/image/upload/v1589455139/Github%20Finder/Home.png)]()
+
+Profile
+
+[![INSERT YOUR GRAPHIC HERE](https://res.cloudinary.com/dscipfbfx/image/upload/v1589455112/Github%20Finder/Profile.png)]()
+
+
 
 > GIF Tools
 
