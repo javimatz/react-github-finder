@@ -1,6 +1,7 @@
 # Github Finder
 
 A Github Finder app.
+Web: https://appgithubfinder.netlify.com
 
 - react
 - react context
