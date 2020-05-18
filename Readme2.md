@@ -13,11 +13,11 @@ Technologies:
 ***Screenshots***
 
 Home
-[![INSERT YOUR GRAPHIC HERE](https://res.cloudinary.com/dscipfbfx/image/upload/v1589455139/Github%20Finder/Home.png)]()
+[![INSERT YOUR GRAPHIC HERE](https://res.cloudinary.com/dscipfbfx/image/upload/v1589796630/Github%20Finder/Screenshot_2020-05-18_Github_Finder.png)]()
 
 
 Profile
-[![INSERT YOUR GRAPHIC HERE](https://res.cloudinary.com/dscipfbfx/image/upload/v1589455112/Github%20Finder/Profile.png)]()
+[![INSERT YOUR GRAPHIC HERE](https://res.cloudinary.com/dscipfbfx/image/upload/v1589796620/Github%20Finder/Screenshot_2020-05-18_Github_Finder_1.png)]()
 
 
 
