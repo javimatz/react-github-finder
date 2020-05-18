@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 const RepoItem = ({ repo }) => {
   return (
   	<div className='card' >
-  		<h3>
-  			<a href={repo.html_url}>{repo.name}</a>
+  		<h3 className='text-github'>
+  			<a className='text-github' href={repo.html_url}>{repo.name}</a>
   		</h3>
   	</div>
   ); 

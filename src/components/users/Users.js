@@ -14,7 +14,7 @@ const Users = () => {
     } 
     else {
       return (
-        <div style={userStyle}>
+        <div className='grid-3'>
         { 
           // Creates an RepoItem component for every repos array element 
           users.map( user => ( 
@@ -25,10 +25,5 @@ const Users = () => {
     }
 }
 
-const userStyle = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(3, 1fr)',
-  gridGap: '1rem'
-}
 
 export default Users;
