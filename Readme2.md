@@ -2,8 +2,6 @@
 
 A Github Finder app.
 
-Technologies:
-
 - react
 - react context
 - axios
