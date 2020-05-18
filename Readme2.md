@@ -2,7 +2,7 @@
 
 A Github Finder app.
 
-Web: https://appgithubfinder.netlify.com
+https://appgithubfinder.netlify.com
 
 
 - react
