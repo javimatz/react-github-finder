@@ -19,9 +19,9 @@ const App = () => {
       <AlertState>
         <Router>
           <div className="App">
+            <Navbar />
             { /* Container */ }
             <div className='container'>
-              <Navbar />
               <Alert />
               { /* Router Switch */ }
               <Switch>

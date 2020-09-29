@@ -356,6 +356,8 @@ table th {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1100px;
+  margin: auto;
   padding: 0.7rem 2rem;
   z-index: 1;
   width: 100%;

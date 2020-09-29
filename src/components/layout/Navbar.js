@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 
 const Navbar = ({title, icon}) => {
   return (
-		<nav className='navbar bg-dark'>
+		<div className='bg-dark'>
+			<nav className='navbar'>
 			<h1>
 				<i className={icon} /> {title}
 			</h1>
@@ -14,7 +15,8 @@ const Navbar = ({title, icon}) => {
 				</li>
 				<li><Link to='/about'>About</Link></li>
 			</ul>
-		</nav>
+			</nav>
+		</div>
   )
 }
 
