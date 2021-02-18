@@ -14,7 +14,7 @@ const Search = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     
-    if (text === '') {
+    if (text.trim() === '') {
       alertContext.setAlert('Please enter something', 'light');
     } else {
       searchUsers(text);
